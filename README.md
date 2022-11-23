@@ -6,13 +6,6 @@
 # note: make sure you are in your desired directory 
 git init
 
-# FIRST TIME GIT SETUP
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
-# <optional>
-git config --global color.ui true
-git config --global core.editor emacs
-
 # CLONING AN EXISTING REPO 
 # note: make sure you are in your desired directory
 git clone <remote_url>
