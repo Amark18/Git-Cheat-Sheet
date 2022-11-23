@@ -14,22 +14,33 @@ cd <repo-name>
 # <optional> set the remote url so when you push/pull, it goes to GitHub
 git remote set-url origin <remote-url>
 
-# TO PUSH TO GITHUB REPO
+# TO COMMIT CHANGES
 # add files so that you can push to repo
 git add .
 # commit/confirm your changes
 git commit -m "explain what you did, but keep it short and concise"
-# push your changes to Github
+# <optional> push your changes to Github
 git push
 
 #### NICE TO KNOW COMMANDS ####
-# see the status of the project files aka changed files
+# See the status of the project files since last commit
 git status
 
-# to get the most updated project files
+# Pull and merge project files from Github Repo
 git pull
 
-# create and switch to new branch
+# Pull project files from Github Repo without merging
+git fetch origin
+# go into fetched branch
+git checkout origin/<branch-name>
+### OR ###
+# fetch only one branch from repo without merging
+git fetch origin <branch-name>
+git checkout <branch-name>
+# go back to main to "undo" a fetch
+git checkout main
+
+# Create and switch to new branch
 git checkout -b <branch-name>
 
 # To switch between different branches
@@ -40,31 +51,19 @@ git stash
 # To restore local changes
 git stash pop
 
-# reset changes since last commit
+# Reset changes since last commit
 git reset --hard HEAD
-# undo last commit
+# Undo last commit
 git reset --hard HEAD^ -or- git reset --hard HEAD~1
-# undo second to last commit
+# Undo second to last commit
 git reset --hard HEAD~2
-# undo N^th commit
+# Undo N^th commit
 git reset --hard HEAD~<N>
 
-# see all changes since last commit
+# See all changes since last commit
 git diff
-# see changes to file since last commit
+# See changes to file since last commit
 git diff <file-name>
-
-# fetch current state of repo without merging
-# essentially just "peeking" at the current state of repo
-git fetch origin
-# go into fetched branch
-git checkout origin/<branch-name>
-### OR ###
-# fetch only one branch from repo without merging
-git fetch origin <branch-name>
-git checkout <branch-name>
-# go back to main to "undo" a fetch
-git checkout main
 ```
 
 ###### More commands [here](https://github.com/Amark18/Git-Cheat-Sheet/blob/main/Git_Sheet.pdf).
