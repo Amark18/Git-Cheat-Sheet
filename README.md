@@ -62,3 +62,5 @@ git checkout <branch_name>
 # go back to main to "undo" a fetch
 git checkout main
 ```
+
+###### More commands [here](https://github.com/Amark18/Git-Cheat-Sheet/blob/main/Git_Sheet.pdf).
