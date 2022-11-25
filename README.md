@@ -23,13 +23,13 @@ git commit -m "explain what you did, but keep it short and concise"
 git push
 
 #### NICE TO KNOW COMMANDS ####
-# See the status of the project files since last commit
+# see the status of the project files since last commit
 git status
 
-# Pull and merge project files from Github Repo
+# pull and merge project files from Github Repo
 git pull
 
-# Pull project files from Github Repo without merging
+# pull project files from Github Repo without merging
 git fetch origin
 # go into fetched branch
 git checkout origin/<branch-name>
@@ -40,29 +40,34 @@ git checkout <branch-name>
 # go back to main to "undo" a fetch
 git checkout main
 
-# Create and switch to new branch
+# create and switch to new branch
 git checkout -b <branch-name>
 
-# To switch between different branches
+# to switch between branches
 git checkout <branch-name>
 
-# To store local changes without committing
+# to delete a branch locally
+git branch -d origin <branch-name>
+# to delete remote branch
+git push -d origin <branch-name>
+
+# to store local changes without committing
 git stash 
-# To restore local changes
+# to restore local changes
 git stash pop
 
-# Reset changes since last commit
+# reset changes since last commit
 git reset --hard HEAD
-# Undo last commit
+# undo last commit
 git reset --hard HEAD^ -or- git reset --hard HEAD~1
-# Undo second to last commit
+# undo second to last commit
 git reset --hard HEAD~2
-# Undo N^th commit
+# undo N^th commit
 git reset --hard HEAD~<N>
 
-# See all changes since last commit
+# see all changes since last commit
 git diff
-# See changes to file since last commit
+# see changes to file since last commit
 git diff <file-name>
 ```
 
