@@ -13,6 +13,8 @@ git clone <remote_url>
 cd <repo-name>
 # <optional> set the remote url so when you push/pull, it goes to GitHub
 git remote add origin <remote-url>
+# verify remote
+git remote -v
 
 # TO COMMIT CHANGES
 # add files so that you can push to repo
